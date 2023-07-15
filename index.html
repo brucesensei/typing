@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>typing master</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Typing Master</h1>
+
+  <!-- start display -->
+  <div class=" display start-display" id="start-display">
+    <label for="select-minutes">Challenge Duration</label><br>
+    <select name="select-minutes" id="select-minutes" autofocus>
+      <option value="5">5</option>
+      <option value="4">4</option>
+      <option value="3">3</option>
+      <option value="2" selected>2</option>
+      <option value="1">1</option>
+    </select>
+    <button type="button" id="start-button">Start</button>
+  </div><br>
+
+  <!-- timer display -->
+  <div class="display timer-display remove-element">
+    <p class="timer">Ready</p>
+  </div><br>
+
+  <!-- word display -->
+  <div class="display word-display remove-element" id="word-display">
+    <h2 class="accuracy"></h2>
+    <img src="" alt="">
+    <p class="word-box"><span class="complete"></span><span class="challenge"></span></p>
+  </div><br>
+
+  <!-- praise display -->
+  <div class="display praise-display remove-element" id="praise-display">
+    <p class="accuracy-result"></p>
+    <p class="speed-result"></p>    
+    <p class="praise-msg"></p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
